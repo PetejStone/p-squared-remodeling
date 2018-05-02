@@ -580,6 +580,16 @@ main {
       margin-right: 0;
       margin-left: 2em; } }
 
+#hammer-left {
+  display: none; }
+  @media (min-width: 768px) {
+    #hammer-left {
+      display: initial; } }
+
+@media (min-width: 768px) {
+  #hammer-right {
+    display: none; } }
+
 aside {
   border-top: 2px solid #ffad33;
   clear: both;

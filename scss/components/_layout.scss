@@ -145,6 +145,19 @@ main {
 }
 }
 
+#hammer-left {
+  display: none;
+  @include mq(medium){
+    display: initial;
+  }
+}
+
+#hammer-right {
+  @include mq(medium) {
+    display: none;
+  }
+}
+
 aside {
   border-top: 2px solid $main-color;
   clear: both;
