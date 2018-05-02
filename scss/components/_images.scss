@@ -9,3 +9,12 @@ aside {
     transform: skewX(-15deg) translateX(-11%);
   }
 }
+
+.about {
+  & img {
+    display: block;
+    max-width: 100%;
+    @extend %center;
+    
+  }
+}

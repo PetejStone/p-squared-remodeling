@@ -161,6 +161,9 @@ footer {
   align-items: center;
   padding: 1em;
   transition: all .5s;
+  & a {
+    @include link-reset($white);
+  }
 }
 
 //About Page

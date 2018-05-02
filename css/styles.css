@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans");
 #nav-icon, .module, main, .repair__border--bottom,
 .rebuild__border--bottom,
-.restore__border--bottom, .about h2 {
+.restore__border--bottom, .about h2, .about img {
   margin: 0 auto; }
 
 * {
@@ -597,6 +597,10 @@ footer {
   align-items: center;
   padding: 1em;
   transition: all .5s; }
+  footer a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff; }
 
 .about {
   text-align: center; }
@@ -645,6 +649,12 @@ header,
   transition: all .5s;
   z-index: 5; }
 
+a {
+  transition: all .3s;
+  display: inline-block; }
+  a:hover {
+    transform: scale(1.05) translateX(3px); }
+
 aside img {
   width: 18.4vmax;
   height: 15vmax;
@@ -652,5 +662,9 @@ aside img {
   margin-left: -2px;
   border-right: 6px solid #ffad33;
   transform: skewX(-15deg) translateX(-11%); }
+
+.about img {
+  display: block;
+  max-width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
