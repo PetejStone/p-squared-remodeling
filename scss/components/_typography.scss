@@ -1,0 +1,31 @@
+@import url($font-url-google + "Fjalla+One" +"|Open+Sans");
+
+h1 {
+  font-family: "Fjalla One";
+  color: $white;
+}
+
+h2 {
+  font-family: "Open Sans";
+  color: $main-color;
+  margin: 1em;
+}
+
+p,
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  & li {
+    color: $white;
+  }
+}
+
+footer {
+  & p {
+    color: $white;
+    font-size: 8px;
+    margin: 0;
+  }
+}

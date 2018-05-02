@@ -1,0 +1,11 @@
+
+aside {
+  & img {
+    width: 18.4vmax;
+    height: 15vmax;
+    margin-right: -2px;
+    margin-left: -2px;
+    border-right: 6px solid $main-color;
+    transform: skewX(-15deg) translateX(-11%);
+  }
+}

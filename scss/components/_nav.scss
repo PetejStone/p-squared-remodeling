@@ -1,0 +1,35 @@
+#nav-icon {
+  display: inline-block;
+  cursor: pointer;
+  @extend %center;
+  margin: 1em;
+  position: fixed;
+  top: 1em;
+  right: 2em;
+  background-color: $main-color;
+  padding: 10px;
+  border-radius: 50%;
+
+}
+
+nav {
+  width: 10em;
+  height: 100%;
+  position: fixed;
+  background-color: $black-variant;
+  right: 0px;
+  top: 0px;
+  transform: translateX(100%);
+  & ul {
+    padding: 0;
+  }
+  & li {
+    cursor: pointer;
+    padding: .5em;
+    margin: .5em;
+    text-align: center;
+    & a {
+      @include link-reset($white);
+    }
+  }
+}

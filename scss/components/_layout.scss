@@ -1,0 +1,176 @@
+
+header {
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  max-width: 100%;
+  height: 32em;
+  border-bottom: 2px solid $main-color;
+  @include flexy(flex, column, null, center);
+  & h1 {
+    text-align: center;
+  }
+}
+
+//MAIN HEADER stylings
+.module {
+  position: relative;
+  transform:  scale(.8);
+  transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+  @extend %center;
+  padding: 15px;
+  box-sizing: padding-box;
+  position: relative;
+  border-right: 2px solid $white;
+  border-top: 2px solid $white;
+  border-left: 2px solid $white;
+  @include mq(medium){
+    transform: scale(1);
+  };
+}
+
+.module__top {
+  cursor: move;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+
+  &:before {
+
+    display: block;
+    content: "";
+    flex: 2 0 0;
+
+    border-top: 2px solid $white;
+  }
+  &:after {
+
+    display: block;
+    content: "";
+    flex: 2 0 0;
+
+    border-top: 2px solid $white;
+  }
+}
+
+.top__content {
+  height: 26px;
+  color: $white;
+  font: 12px/32px Helvetica;
+  font-weight: bold;
+  overflow: hidden;
+  flex: 0 0 65px;
+  margin-top: -18px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  & p {
+    margin: 0;
+  }
+}
+
+.module__contents {
+  text-align:center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+//end of main header stylings
+
+main {
+  width: 75%;
+  @extend %center;
+  transition: all .5s;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+}
+.sub-heading {
+  @include flexy(flex,row);
+}
+
+.repair,
+.rebuild,
+.restore {
+  margin: 0 auto;
+  @include mq(medium) {
+  width: 45%;
+  height: 5em;
+  clear: both;
+  margin: 0;
+}
+  &__border {
+    @include mq(medium){
+      border-right: 1px solid $main-color;
+      height: 5em;
+      width: 1em;
+      @include flexy(flex,column, null, center);
+      transform: translateY(-200%);
+      float: right;
+  }
+    &--bottom {
+      border-bottom: 1px solid $main-color;
+      border-right: none;
+      width: 60%;
+      @extend %center;
+      @include mq(medium) {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+  & p{
+    padding: 0px 2em 2em 2em;
+  }
+
+}
+
+.rebuild {
+  @include mq(medium) {
+    float: right;
+    border-right: none;
+    margin-bottom: 10em;
+    &__border {
+      border-right: none;
+      border-left: 1px solid $main-color;
+      float: left;
+    }
+    & p {
+      margin-right: 0;
+      margin-left: 2em;
+    }
+}
+}
+
+aside {
+  border-top: 2px solid $main-color;
+  clear: both;
+  background-color: $black-variant;
+  display: flex;
+  overflow-x: hidden;
+  transition: all .5s;
+}
+
+footer {
+  border-top: 2px solid $main-color;
+  background-color: $black-variant;
+  @include flexy(flex, row, null, space-between);
+  align-items: center;
+  padding: 1em;
+  transition: all .5s;
+}
+
+//About Page
+
+.about {
+  & h2 {
+    text-align: center;
+    border-bottom: 1px solid $main-color;
+    width: fit-content;
+    @extend %center;
+  }
+  text-align: center;
+}
