@@ -118,14 +118,11 @@ main {
       @include mq(medium) {
         border-bottom: none;
       }
-
     }
-
   }
   & p{
-    padding: 0px 2em 2em 2em;
+    padding: 0px 2em 2em 0em;
   }
-
 }
 
 .rebuild {

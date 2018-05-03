@@ -437,8 +437,7 @@ h1 {
 
 h2 {
   font-family: "Open Sans";
-  color: #ffad33;
-  margin: 1em; }
+  color: #ffad33; }
 
 p,
 li {
@@ -565,7 +564,7 @@ main {
   .repair p,
   .rebuild p,
   .restore p {
-    padding: 0px 2em 2em 2em; }
+    padding: 0px 2em 2em 0em; }
 
 @media (min-width: 768px) {
   .rebuild {
@@ -676,5 +675,8 @@ aside img {
 .about img {
   display: block;
   max-width: 100%; }
+
+.sub-heading img {
+  margin: 1em; }
 
 /*# sourceMappingURL=styles.css.map */
