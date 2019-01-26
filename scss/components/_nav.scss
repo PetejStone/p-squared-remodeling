@@ -2,10 +2,11 @@
   display: inline-block;
   cursor: pointer;
   @extend %center;
-  margin: 1em;
+  margin: 5px;
+  margin-right: 5px;
   position: fixed;
   top: 1em;
-  right: 2em;
+  right: 10px;
   background-color: $main-color;
   padding: 10px;
   border-radius: 50%;

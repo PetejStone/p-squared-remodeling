@@ -403,10 +403,11 @@ template {
 #nav-icon {
   display: inline-block;
   cursor: pointer;
-  margin: 1em;
+  margin: 5px;
+  margin-right: 5px;
   position: fixed;
   top: 1em;
-  right: 2em;
+  right: 10px;
   background-color: #ffad33;
   padding: 10px;
   border-radius: 50%; }
@@ -454,14 +455,18 @@ footer p {
 header {
   background-image: url("../images/header.jpg");
   background-size: cover;
+  background-position: center;
   max-width: 100%;
-  height: 32em;
+  height: 25em;
   border-bottom: 2px solid #ffad33;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   header h1 {
     text-align: center; }
+  @media (min-width: 750px) {
+    header {
+      height: 32em; } }
 
 .module {
   position: relative;
@@ -473,7 +478,7 @@ header {
   border-right: 2px solid #fff;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff; }
-  @media (min-width: 768px) {
+  @media (min-width: 750px) {
     .module {
       transform: scale(1); } }
 
@@ -530,7 +535,7 @@ main {
 .rebuild,
 .restore {
   margin: 0 auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 750px) {
     .repair,
     .rebuild,
     .restore {
@@ -538,7 +543,7 @@ main {
       height: 5em;
       clear: both;
       margin: 0; } }
-  @media (min-width: 768px) {
+  @media (min-width: 750px) {
     .repair__border,
     .rebuild__border,
     .restore__border {
@@ -556,7 +561,7 @@ main {
     border-bottom: 1px solid #ffad33;
     border-right: none;
     width: 60%; }
-    @media (min-width: 768px) {
+    @media (min-width: 750px) {
       .repair__border--bottom,
       .rebuild__border--bottom,
       .restore__border--bottom {
@@ -566,7 +571,7 @@ main {
   .restore p {
     padding: 0px 2em 2em 0em; }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .rebuild {
     float: right;
     border-right: none;
@@ -581,11 +586,11 @@ main {
 
 #hammer-left {
   display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 750px) {
     #hammer-left {
       display: initial; } }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   #hammer-right {
     display: none; } }
 
