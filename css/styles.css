@@ -468,6 +468,14 @@ header {
     header {
       height: 32em; } }
 
+.slideshow-container {
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to right, #2e2e1d, #1E1E13, #1E1E13, #2e2e1d);
+  border-bottom: 2px solid #ffad33; }
+
 .module {
   position: relative;
   transform: scale(0.8);
@@ -683,5 +691,9 @@ aside img {
 
 .sub-heading img {
   margin: 1em; }
+
+.mySlides img {
+  width: 320px;
+  height: 213px; }
 
 /*# sourceMappingURL=styles.css.map */
